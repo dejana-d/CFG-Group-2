@@ -1,0 +1,65 @@
+/* general body styling, the stuff 'behind' the grid */
+
+body {
+    background-color: #f8efe8;
+    padding: 40px;
+  }
+
+
+
+/* refer to https://www.w3schools.com/css/css_grid.asp for more on grids  */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2px;
+  background-color: black; 
+
+
+  /* if we want curved edges try this   */
+  /* border-color: black;
+  border-radius: 0.5cm; */
+  padding: 2px;
+}
+
+.grid-container > div {
+  background-color: #f8efe8;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 30px;
+
+  /* make all boxes curved */
+  /* border-color: black;
+  border-style: solid;
+  border-radius: 0.5cm; */
+}
+
+/* where grid starts and number of collumns */
+.item0 {
+color:#c8d68b;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  
+}
+
+
+/* styling for day 9 on hover */
+.item9:hover{
+    background-color:#5e59c0;
+    cursor: pointer;
+ }
+
+
+/* styling for day 10 on hover  */
+.item10:hover{
+    background-color:#ffa9da;
+ }
+
+ /* styling for day 11 on hover */
+.item11:hover{
+    background-color:#f6c425;
+    cursor: pointer;
+ }
+
+
+ 
