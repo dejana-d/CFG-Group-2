@@ -2,25 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    
     <title>Document</title>
 <!-- CSS file link -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 
-<body>
 
+
+
+<body>
 <!-- Javascript file link -->
     <script src="script.js"></script>
+    
 
-
-
-    <!-- each date = an item  -->
+  <!-- all the classes for each date go here -->
 <div class="grid-container">
-  
-    <!-- links div class to another html page.  -->
-  <div class="item0"><a href="about.html">navbar links can go here </a> </div>
+
+<!-- navbar links -->
+<div onclick="location.href='about.html'" style="cursor:pointer" class="about">about</div>
+<div onclick="location.href='contact.html'" style="cursor:pointer" class="contact">contact</div>
+ 
+
+<!-- liss of all dates -->
   <div class="item1">1</div>
   <div class="item2">2</div>
   <div class="item3">3</div>  
@@ -31,7 +37,7 @@
   <div class="item8">8</div>  
   <div class="item9">9</div> 
   
-<!-- syntax for opening a link in a new window -->
+<!-- example of syntax for opening a link in a new window -->
   <div onclick="window.open('https://www.youtube.com/watch?v=aEqlQvczMJQ','mywindow');" class="item10">10</div>
   <div onclick="window.open('https://open.spotify.com/playlist/37i9dQZF1DX9uKNf5jGX6m?si=614ea19c57dc444c','mywindow');" class="item11">11</div>
   <div class="item12">12</div>
@@ -54,7 +60,19 @@
   <div class="item29">29</div> 
   <div class="item30">30</div>
   <div class="item31">31</div>
+<!--  could do a for loop 31 times to create divs. use string interpolation for class items -->
+  
+<!-- on click, run the functions which change to dark mode and toggle the text. 
+     code adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_dark_mode
+                     & https://www.w3schools.com/howto/howto_js_toggle_text.asp-->
+
+  <div onclick="darkMode()"class="toggle"><div id="toggleDIV">dark</div></div>
+
+  <!-- event listener on click usign dom method -->
+
 </div>
+
+
 </body>
 </html>
 
@@ -74,3 +92,4 @@
 
 
   <!-- <a href="about.html">  <div class="item0">navbar links can go here</div></a> -->
+
