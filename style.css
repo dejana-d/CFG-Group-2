@@ -1,10 +1,40 @@
+/* loads the font file */
+@font-face {
+    font-family: "PPHatton";
+    src: url("PPHatton-Medium.otf") format("opentype");
+    font-style: "medium";
+  }
+
+  @font-face {
+    font-family: "PPHattonBold";
+    src: url("PPHatton-Bold.otf") format("opentype");
+    font-style: bold;
+  }
 /* general body styling, the stuff 'behind' the grid */
+
 
 body {
     background-color: #f8efe8;
-    padding: 40px;
+    padding: 50px;
   }
 
+
+  .dark-mode {
+    background-color: #202124;
+    padding: 50px;
+  }
+
+/* dark mode style */
+.dark-mode .grid-container > div {
+    background-color: #202124;
+    color: #f8efe8;
+   
+  }
+
+/* changes grid lines from dark to light*/
+.dark-mode .grid-container {
+    background-color: #f8efe8;
+  }
 
 
 /* refer to https://www.w3schools.com/css/css_grid.asp for more on grids  */
@@ -12,9 +42,11 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
+  /* gap: 20px; */
   gap: 2px;
-  background-color: black; 
+  background-color: #202124; 
 
+  font-family: "PPHatton";
 
   /* if we want curved edges try this   */
   /* border-color: black;
@@ -26,40 +58,147 @@ body {
   background-color: #f8efe8;
   text-align: center;
   padding: 40px 0;
-  font-size: 30px;
-
+  font-size: 40px;
+  
   /* make all boxes curved */
   /* border-color: black;
   border-style: solid;
-  border-radius: 0.5cm; */
+  border-width: 2px;
+  border-radius: 10cm; */
 }
 
-/* where grid starts and number of collumns */
-.item0 {
-color:#c8d68b;
-  grid-column-start: 1;
-  grid-column-end: 7;
+
+/* stretches 'about' box */
+.about {
+    grid-column-start: 1;  
+    grid-column-end: 3;
+     /* border-top-left-radius: 2cm; */
   
-}
+  }
+
+  /* about link hover state in light mode */
+ .about:hover{
+    background-color:#c8d68b;
+    cursor: pointer;
+ }
+
+ /* about link hover state in dark mode */
+ .dark-mode .about:hover{
+    background-color:#c8d68b;
+    cursor: pointer;
+ }
 
 
-/* styling for day 9 on hover */
+
+/* stretches 'contact us' box */
+.contact {
+    grid-column-start: 3;  
+    grid-column-end: 5;
+     /* border-top-left-radius: 2cm; */
+  }
+
+  /* contact link hover state in light mode */
+ .contact:hover{
+    /* background-color:#c0aeed; */
+
+    /* syntax for linear gradient on hover */
+    background-color: #c0aeed;
+    background-image:
+      linear-gradient(
+        #c0aeed, #f8efe8
+      );
+    cursor: pointer;
+ }
+
+ /* contact link hover state in dark mode */
+ .dark-mode .contact:hover{
+    background-color:#c0aeed;
+    cursor: pointer;
+ }
+
+ .dark-mode .contact{
+    background-color:#202124;
+    cursor: pointer;
+ }
+
+
+
+
+
+
+
+
+
+ /* dark mode link hover state */
+ .toggle:hover{
+    background-color: #202124;
+    color: white;
+    cursor: pointer;
+ }
+
+  /* hover state to go back to light mode */    
+  .dark-mode .toggle:hover{
+    background-color: #f8efe8;
+    color: black;
+    cursor: pointer;
+    /* find out how to change the text or symbol from light mode to dark mode */
+ }
+
+
+  /* stretches box 02 */
+.item02 {
+    grid-column-start: 3;  
+    grid-column-end: 5;
+  }
+
+.item1 {
+    grid-column-end: 6;
+  }
+
+
+/* puts day 2 second last  */
+.item2 {
+    grid-column-end: 7;
+    
+  }
+
+
+/* day 9 on hover */
 .item9:hover{
     background-color:#5e59c0;
     cursor: pointer;
  }
 
+ /* day 9 on hover dark mode */
+ .dark-mode .item9:hover{
+    background-color:#5e59c0;
+    cursor: pointer;
+ }
 
-/* styling for day 10 on hover  */
+
+/* day 10 on hover  */
 .item10:hover{
     background-color:#ffa9da;
  }
 
- /* styling for day 11 on hover */
+ /* day 10 on hover dark mode*/
+.dark-mode .item10:hover{
+    background-color:#ffa9da;
+    cursor: pointer;
+ }
+
+ /* day 11 on hover */
 .item11:hover{
     background-color:#f6c425;
     cursor: pointer;
  }
 
-
+ /* day 11 on hover dark mode */
+.dark-mode .item11:hover{
+    background-color:#f6c425;
+    cursor: pointer;
+ }
  
+
+
+
