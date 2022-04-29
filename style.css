@@ -10,79 +10,130 @@
     src: url("PPHatton-Bold.otf") format("opentype");
     font-style: bold;
   }
-/* general body styling, the stuff 'behind' the grid */
 
+
+
+/* general body styling, the stuff 'behind' the grid */
 
 body {
     background-color: #f8efe8;
     padding: 50px;
   }
 
-
-  .dark-mode {
+/* ----- dark mode style ----- */
+.dark-mode {
     background-color: #202124;
     padding: 50px;
   }
 
-/* dark mode style */
 .dark-mode .grid-container > div {
     background-color: #202124;
     color: #f8efe8;
-   
   }
 
-/* changes grid lines from dark to light*/
 .dark-mode .grid-container {
     background-color: #f8efe8;
   }
+
+
 
 
 /* refer to https://www.w3schools.com/css/css_grid.asp for more on grids  */
 
 .grid-container {
   display: grid;
+
   grid-template-columns: auto auto auto;
-  /* gap: 20px; */
   gap: 2px;
   background-color: #202124; 
-
   font-family: "PPHatton";
-
-  /* if we want curved edges try this   */
-  /* border-color: black;
-  border-radius: 0.5cm; */
   padding: 2px;
 }
 
 .grid-container > div {
+  background-color: #f8efe8; 
+  text-align: center;
+  padding: 40px 0;
+  font-size: 40px;
+}
+
+
+
+/* navBar includes about, contact and back buttons across all html pages */
+
+.navBar {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2px;
+  background-color: #202124; 
+  font-family: "PPHatton";
+  padding: 2px;
+}
+
+.navBar > div {
   background-color: #f8efe8;
   text-align: center;
   padding: 40px 0;
   font-size: 40px;
-  
-  /* make all boxes curved */
-  /* border-color: black;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 10cm; */
+}
+
+/* positions dark mode button in navbar*/
+.navBar .toggle{
+  grid-column-start: 6;  
+  grid-column-end: 7;
+}
+
+/* positions back button in navbar */
+.navBar .back {
+  grid-column-start: 5;  
+  grid-column-end: 6;
+   /* border-top-left-radius: 2cm; */
+
+}
+
+/* dark mode styling for navBar */
+.dark-mode .navBar {
+    background-color: #f8efe8; 
+
+}
+
+.dark-mode .navBar > div {
+  background-color: #202124;
+  color: #f8efe8;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 40px;
 }
 
 
-/* stretches 'about' box */
+
+
+/* ----- styling for back button interactions ----- */
+.back:hover{
+  background-color:#c8d68b;
+  cursor: pointer;
+}
+
+.dark-mode .back:hover{
+  background-color:#c8d68b;
+  cursor: pointer;
+}
+
+
+/* ----- postion and styling for about button -----  */
 .about {
     grid-column-start: 1;  
     grid-column-end: 3;
-     /* border-top-left-radius: 2cm; */
-  
   }
 
-  /* about link hover state in light mode */
+  /* light mode */
  .about:hover{
-    background-color:#c8d68b;
+    /* background-color:#c8d68b; */
+    background-color: #d5f379;
     cursor: pointer;
  }
 
- /* about link hover state in dark mode */
+ /* dark mode */
  .dark-mode .about:hover{
     background-color:#c8d68b;
     cursor: pointer;
