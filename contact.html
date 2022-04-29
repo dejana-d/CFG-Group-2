@@ -7,10 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2> this is the contact page!!</h2>
+<!-- Javascript file link -->
+<script src="script.js"></script>
+
+<div class="navBar">
+
+    <!-- navbar links -->
+    
+    <div onclick="location.href='about.html'" style="cursor:pointer" class="about">about</div>
+
+    <!-- inline css to make it clear which page users are on -->
+    <div onclick="location.href='contact.html'" style="cursor:pointer; background-color: #c0aeed;
+    background-image:linear-gradient(#c0aeed, #f8efe8);" class="contact">contact</div>
+    <div onclick="location.href='index.html'" style="cursor:pointer" class="back">back</div>
+    <div onclick="darkMode()"class="toggle"><div id="toggleDIV">dark</div></div>
+    
+</div>
+
+<h2> this is the contact page!!</h2>
 <p>could include a form?</p>
 <p>we can have people leave messages here too</p>
-<button onclick="window.location.href='index.html'" class="back-button" role="button">Back</button>
+<!-- <button onclick="window.location.href='index.html'" class="back-button" role="button">Back</button> -->
+
 
 </body>
 </html>
