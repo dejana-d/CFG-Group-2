@@ -5,34 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
-<body>
-    <!-- Javascript file link -->
-    <script src="script.js"></script>
-
-    <!-- in css #aboutNavBar styles the navbar for about page -->
-    <div id="aboutNavBar">
-    <div class="navBar">
-        <!-- navbar links -->
-        <!-- inline css to make it clear users are on about page -->
-        <div onclick="location.href='about.html'" style="cursor:pointer; background-color: #d5f379" class="about">about</div>
-        <!-- removed from inline css above ; background-color: #d5f379 -->
-
-        <div onclick="location.href='contact.html'" style="cursor:pointer" class="contact">contact</div>
-        <div onclick="location.href='index.html'" style="cursor:pointer" class="back">back</div>
-        <div onclick="darkMode()"class="toggle"><div id="toggleDIV">dark</div></div>
-        
-    </div>
-</div>
-    <h2> this is the about page!!</h2>
-
 
  <!-- TEST. scrolling text (marquee). reference can be found here: https://www.w3schools.in/html/marquee-tag -->
   
-  <marquee width="100%" direction="right" >hello world</marquee></div> 
+ <div class="marquee">
+    <div class="track">
+      <div class="content">&nbsp;SELF CARE TIME • SELF CARE TIME • SELF CARE TIME • SELF CARE TIME • SELF CARE TIME • SELF CARE TIME • SELF CARE TIME • SELF CARE TIME • </div>
+    </div>
+  </div>
 
 
   
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="icon"><i class="fa fa-star"></i></div>
+            <div class="content">
+                <h3>Info</h3>
+                <p> information added here </p>
+            </div>
+        </div>
+    <div class="container">
+         <div class="box">
+            <div class="icon"><i class="fa fa-heart"></i></div>
+            <div class="content">
+                <h3>Info</h3>
+                <p> information added here </p>
+            </div>
+        </div>  
+    </div>
+     <div class="container">
+        <div class="box">
+            <div class="icon"><i class="fa fa-face-smile-beam"></i></div>
+            <div class="content">
+                <h3>Info</h3>
+                <p> information added here </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+         <div class="box">
+            <div class="icon"><i class="fa fa-hand-holding-hand" aria-hidden="true"></i></div>
+            <div class="content">
+                <h3>Info</h3>
+                <p> information added here </p>
+            </div>
+        </div>
+    </div>
+     <div class="container">
+        <div class="box">
+            <div class="icon"><i class="fa fa-sun" aria-hidden="true"></i></div>
+            <div class="content">
+                <h3>Info</h3>
+                <p> information added here </p>
+             </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="icon"><i class="fa fa-gift" aria-hidden="true"></i></div>
+            <div class="content">
+                <h3>Info</h3>
+                <p> information added here </p>
+            </div>
+        </div>
+    </div>
+</body>
+
 <!-- TEST. code adapted from here: https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link -->
   
 <button onclick="window.location.href='index.html'" class="back-button" role="button">Back</button>
