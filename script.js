@@ -11,7 +11,7 @@ function openInNewTab(url) {
 
 // FUNCTION TO ALERT WHEN WRONG DAY IS CLICKED//
 function wrongDay(){
-    alert("come back on the right day :)");
+    alert("✨come back on the right day✨");
 }
 
 
