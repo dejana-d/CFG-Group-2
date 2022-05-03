@@ -24,7 +24,7 @@ let getDay1 = todayIs1.getDate()
 
 function may1(){
 if ((getDay1 >= 1)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=ENYYb5vIMkU');
   } else {
       wrongDay();
   }
@@ -52,7 +52,7 @@ let getDay3 = todayIs3.getDate()
 
 function may3(){
 if ((getDay3 >= 3)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=AB3Y-4a3ZrU');
   } else {
       wrongDay();
   }
@@ -66,7 +66,7 @@ let getDay4 = todayIs4.getDate()
 
 function may4(){
 if ((getDay4 >= 4)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://files.shroomery.org/cms/6584522-EckhartTolle-ThePowerOfNow.pdf');
   } else {
       wrongDay();
   }
@@ -80,7 +80,7 @@ let getDay5 = todayIs5.getDate()
 
 function may5(){
 if ((getDay5 >= 5)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=aEqlQvczMJQ');
   } else {
       wrongDay();
   }
@@ -108,7 +108,7 @@ let getDay7 = todayIs7.getDate()
 
 function may7(){
 if ((getDay7 >= 7)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://open.spotify.com/episode/7lR4jC90jef8ivbXEfOdYP?si=52e7842fe4934d82');
   } else {
       wrongDay();
   }
@@ -122,7 +122,7 @@ let getDay8 = todayIs8.getDate()
 
 function may8(){
 if ((getDay8 >= 8)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=gXuq4M5rU9E');
   } else {
       wrongDay();
   }
@@ -150,7 +150,7 @@ let getDay10 = todayIs10.getDate()
 
 function may10(){
 if ((getDay10 >= 10)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=OccjH_2ddQc');
   } else {
       wrongDay();
   }
@@ -178,7 +178,7 @@ let getDay12 = todayIs12.getDate()
 
 function may12(){
 if ((getDay12 >= 12)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.apnamba.com/Ebooks-pdf/James%20Redfield%20-%20The%20Celestine%20Prophecy.pdf');
   } else {
       wrongDay();
   }
@@ -192,7 +192,7 @@ let getDay13 = todayIs13.getDate()
 
 function may13(){
 if ((getDay13 >= 13)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=ChHxbJuUR9Q');
   } else {
       wrongDay();
   }
@@ -206,7 +206,7 @@ let getDay14 = todayIs13.getDate()
 
 function may14(){
 if ((getDay14 >= 14)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=j734gLbQFbU');
   } else {
       wrongDay();
   }
@@ -220,7 +220,7 @@ let getDay15 = todayIs15.getDate()
 
 function may15(){
 if ((getDay15 >= 15)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=6y4PVjjetUw');
   } else {
       wrongDay();
   }
@@ -234,7 +234,7 @@ let getDay16 = todayIs16.getDate()
 
 function may16(){
 if ((getDay16 >= 16)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.opportunitiesforyouth.org/wp-content/uploads/2021/04/Atomic_Habits_by_James_Clear-1.pdf');
   } else {
       wrongDay();
   }
@@ -248,7 +248,7 @@ let getDay17 = todayIs17.getDate()
 
 function may17(){
 if ((getDay17 >= 17)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=4pKly2JojMw');
   } else {
       wrongDay();
   }
@@ -262,7 +262,7 @@ let getDay18 = todayIs18.getDate()
 
 function may18(){
 if ((getDay18 >= 18)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://open.spotify.com/playlist/37i9dQZF1DX9uKNf5jGX6m?si=614ea19c57dc444c');
   } else {
       wrongDay();
   }
@@ -318,7 +318,7 @@ let getDay22 = todayIs22.getDate()
 
 function may22(){
 if ((getDay22 >= 22)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://open.spotify.com/playlist/37i9dQZF1DWVS1recTqXhf?si=a12108f129254c76');
   } else {
       wrongDay();
   }
@@ -332,7 +332,7 @@ let getDay23 = todayIs21.getDate()
 
 function may23(){
 if ((getDay23 >= 23)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('http://xn--webducation-dbb.com/wp-content/uploads/2020/03/The-Daily-Stoic_-366-Meditations-on-Wisdom-Perseverance-and-the-Art-of-Living-PDFDrive.com-.pdf');
   } else {
       wrongDay();
   }
@@ -360,7 +360,7 @@ let getDay25 = todayIs25.getDate()
 
 function may25(){
 if ((getDay25 >= 25)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=BiWDsfZ3zbo');
   } else {
       wrongDay();
   }
@@ -374,7 +374,7 @@ let getDay26 = todayIs26.getDate()
 
 function may26(){
 if ((getDay26 >= 26)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=FGO8IWiusJo');
   } else {
       wrongDay();
   }
@@ -417,7 +417,7 @@ let getDay29 = todayIs29.getDate()
 
 function may29(){
 if ((getDay29 >= 29 ) ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/playlist?list=PLQiGxGHwiuD1kdxsWKFuhE0rITIXe-7yC');
   } else {
       wrongDay();
   }
@@ -431,7 +431,7 @@ let getDay30 = todayIs30.getDate()
 
 function may30(){
 if ((getDay30 >= 30 ) ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://open.spotify.com/episode/4JIM6biMG5CQDsSMQFwG3O?si=fd65f153333a4b78');
   } else {
       wrongDay();
   }
@@ -440,7 +440,7 @@ if ((getDay30 >= 30 ) ){
 
 // MAY 31
 const day31 = document.getElementsByClassName("item31");
-const todayIs31 = new Date('31');
+const todayIs31 = new Date();
 let getDay31 = todayIs31.getDate()
 
 function may31(){
@@ -450,11 +450,6 @@ if ((getDay31 >= 31 ) ){
       wrongDay();
   }
 }
-
-
-
-
-
 
 
 
