@@ -110,12 +110,20 @@ body {
 
 /* ----- styling for back button interactions ----- */
 .back:hover{
-  background-color:#c8d68b;
+  background-color:#4AD996;
+  background-image:
+  linear-gradient(
+    #4ad996, #f8efe8
+  );
   cursor: pointer;
 }
 
 .dark-mode .back:hover{
-  background-color:#c8d68b;
+  background-color:#4AD996;
+  background-image:
+  linear-gradient(
+    #4ad996, #f8efe8
+  );
   cursor: pointer;
 }
 
@@ -129,13 +137,21 @@ body {
   /* light mode */
  .about:hover{
     /* background-color:#c8d68b; */
-    background-color: #d5f379;
+    background-color: #7796F2;
+    background-image:
+    linear-gradient(
+      #7796F2, #f8efe8
+    );
     cursor: pointer;
  }
 
  /* dark mode */
  .dark-mode .about:hover{
-    background-color:#c8d68b;
+    background-color: #7796F2;
+    background-image:
+    linear-gradient(
+      #7796F2, #202124
+    );
     cursor: pointer;
  }
 
@@ -150,28 +166,26 @@ body {
 
   /* contact link hover state in light mode */
  .contact:hover{
-
+    /* background-color:#c0aeed; */
 
     /* syntax for linear gradient on hover */
-    background-color: #c0aeed;
+    background-color: #F2A0DC;
     background-image:
       linear-gradient(
-        #c0aeed, #f8efe8
+        #F2A0DC, #f8efe8
       );
     cursor: pointer;
  }
-
 
  /* contact link hover state in dark mode */
  .dark-mode .contact:hover{
-    background-color: #c0aeed;
-    background-image:
-      linear-gradient(
-        #c0aeed, #202124
-      );
+  background-color: #F2A0DC;
+  background-image:
+    linear-gradient(
+      #F2A0DC, #202124
+    );
     cursor: pointer;
  }
- 
 
  .dark-mode .contact{
     background-color:#202124;
@@ -189,14 +203,14 @@ body {
  /* dark mode link hover state */
  .toggle:hover{
     background-color: #202124;
-    color: white;
+    color: #f8efe8;
     cursor: pointer;
  }
 
   /* hover state to go back to light mode */    
   .dark-mode .toggle:hover{
     background-color: #f8efe8;
-    color: black;
+    color: #202124;
     cursor: pointer;
     /* find out how to change the text or symbol from light mode to dark mode */
  }
@@ -220,82 +234,6 @@ body {
   }
 
 
-
-
-.item1:hover{
-  /* syntax for linear gradient on hover */
-  background-color: #c0aeed;
-  background-image:
-    linear-gradient(
-      #c0aeed, #f8efe8
-    );
-}
-
-.item2:hover{
-  /* syntax for linear gradient on hover */
-  background-color: #d5f379;
-  background-image:
-    linear-gradient(
-      #d5f379, #f8efe8
-    );
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* day 9 on hover */
-.item9:hover{
-    background-color:#5e59c0;
-    cursor: pointer;
- }
-
- /* day 9 on hover dark mode */
- .dark-mode .item9:hover{
-    background-color:#5e59c0;
-    cursor: pointer;
- }
-
-
-/* day 10 on hover  */
-.item10:hover{
-    background-color:#ffa9da;
- }
-
- /* day 10 on hover dark mode*/
-.dark-mode .item10:hover{
-    background-color:#ffa9da;
-    cursor: pointer;
- }
-
- /* day 11 on hover */
-.item11:hover{
-    background-color:#f6c425;
-    cursor: pointer;
- }
-
- /* day 11 on hover dark mode */
-.dark-mode .item11:hover{
-    background-color:#f6c425;
-    cursor: pointer;
- }
  
 
 
