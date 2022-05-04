@@ -18,7 +18,14 @@
 body {
     background-color: #f8efe8;
     padding: 50px;
+    overflow-y: scroll; 
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
+
+  body::-webkit-scrollbar{
+    display:none;
+}
 
 /* ----- dark mode style ----- */
 .dark-mode {
@@ -119,12 +126,14 @@ body {
 }
 
 .dark-mode .back:hover{
+ 
   background-color:#4AD996;
   background-image:
   linear-gradient(
     #4ad996, #f8efe8
   );
   cursor: pointer;
+  color: #202124;
 }
 
 
@@ -147,6 +156,7 @@ body {
 
  /* dark mode */
  .dark-mode .about:hover{
+   color: #202124;
     background-color: #7796F2;
     background-image:
     linear-gradient(
@@ -185,6 +195,7 @@ body {
       #F2A0DC, #202124
     );
     cursor: pointer;
+    color: #202124;
  }
 
  .dark-mode .contact{
