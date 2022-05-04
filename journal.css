@@ -1,0 +1,468 @@
+/* loads the font file */
+@font-face {
+    font-family: "PPHatton";
+    src: url("PPHatton-Medium.otf") format("opentype");
+    font-style: "medium";
+  }
+
+  @font-face {
+    font-family: "PPHattonLight";
+    src: url("PPHatton-Ultralight.otf") format("opentype");
+    font-style: "light";
+  }
+
+  @font-face {
+    font-family: "GrandSLang";
+    src: url("GrandSlang-Italic.otf") format("opentype");
+    font-style: "italic";
+  }
+
+  @font-face {
+    font-family: "GrandSLang";
+    src: url("GrandSlang-Roman.otf") format("opentype");
+    font-style: "roman";
+  }
+
+
+  
+
+/* general body styling, the stuff 'behind' the grid */
+
+body {
+    background-color: #f8efe8;
+    padding: 50px;
+    overflow-y: scroll; 
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  body::-webkit-scrollbar{
+      display:none;
+  }
+
+/* ----- dark mode style ----- */
+.dark-mode {
+    background-color: #202124;
+    padding: 50px;
+  }
+
+.dark-mode .grid-container > div {
+    background-color: #202124;
+    color: #f8efe8;
+  }
+
+.dark-mode .grid-container {
+    background-color: #f8efe8;
+  }
+
+
+
+
+/* refer to https://www.w3schools.com/css/css_grid.asp for more on grids  */
+
+.grid-container {
+  display: grid;
+
+  grid-template-columns: auto auto auto;
+  gap: 2px;
+  background-color: #202124; 
+  font-family: "PPHatton";
+  padding: 2px;
+}
+
+.grid-container > div {
+  background-color: #f8efe8; 
+  text-align: center;
+  padding: 40px 0;
+  font-size: 40px;
+}
+
+
+
+/* navBar includes about, contact and back buttons across all html pages */
+
+.navBar {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2px;
+  background-color: #202124; 
+  font-family: "PPHatton";
+  padding: 2px;
+}
+
+.navBar > div {
+  background-color: #f8efe8;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 40px;
+}
+
+/* positions dark mode button in navbar*/
+.navBar .toggle{
+  grid-column-start: 6;  
+  grid-column-end: 7;
+}
+
+/* positions back button in navbar */
+.navBar .back {
+  grid-column-start: 5;  
+  grid-column-end: 6;
+   /* border-top-left-radius: 2cm; */
+
+}
+
+/* dark mode styling for navBar */
+.dark-mode .navBar {
+    background-color: #f8efe8; 
+
+}
+
+.dark-mode .navBar > div {
+  background-color: #202124;
+  color: #f8efe8;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 40px;
+}
+
+
+
+
+/* ----- styling for back button interactions ----- */
+.back:hover{
+  background-color:#4AD996;
+  background-image:
+  linear-gradient(
+    #4ad996, #f8efe8
+  );
+  
+  cursor: pointer;
+}
+
+.dark-mode .back:hover{
+    color:#202124;
+  background-color:#4AD996;
+  background-image:
+  linear-gradient(
+    #4ad996, #202124
+  );
+  cursor: pointer;
+}
+
+
+/* ----- postion and styling for about button -----  */
+.about {
+    grid-column-start: 1;  
+    grid-column-end: 3;
+  }
+
+  /* light mode */
+ .about:hover{
+    /* background-color:#c8d68b; */
+    background-color: #7796F2;
+    background-image:
+    linear-gradient(
+      #7796F2, #f8efe8
+    );
+    cursor: pointer;
+ }
+
+ /* dark mode */
+ .dark-mode .about:hover{
+
+    background-color: #7796F2;
+    background-image:
+    linear-gradient(
+      #7796F2, #202124
+    );
+    cursor: pointer;
+    color: #202124;
+ }
+
+
+
+/* stretches 'contact us' box */
+.contact {
+    grid-column-start: 3;  
+    grid-column-end: 5;
+     /* border-top-left-radius: 2cm; */
+  }
+
+  /* contact link hover state in light mode */
+ .contact:hover{
+    /* background-color:#c0aeed; */
+
+    /* syntax for linear gradient on hover */
+    background-color: #F2A0DC;
+    background-image:
+      linear-gradient(
+        #F2A0DC, #f8efe8
+      );
+    cursor: pointer;
+ }
+
+ /* contact link hover state in dark mode */
+ .dark-mode .contact:hover{
+  background-color: #F2A0DC;
+  background-image:
+    linear-gradient(
+      #F2A0DC, #202124
+    );
+    cursor: pointer;
+ }
+
+ .dark-mode .contact{
+    background-color:#202124;
+    cursor: pointer;
+ }
+
+ /* dark mode link hover state */
+ .toggle:hover{
+    background-color: #202124;
+    color: #f8efe8;
+    cursor: pointer;
+ }
+
+  /* hover state to go back to light mode */    
+  .dark-mode .toggle:hover{
+    background-color: #f8efe8;
+    color: #202124;
+    cursor: pointer;
+    /* find out how to change the text or symbol from light mode to dark mode */
+ }
+
+
+
+
+
+
+
+ /* STYLING FOR BOTTOM HALF OF PAGE */
+
+ .journalContainer{
+    padding: 50px;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    /* margin-bottom: 10px; */
+    font-family: "PPHatton";
+    font-size: 30px;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+   border: #202124 solid 2px;
+   border-top: none;
+   background-color: #f7c775;
+
+ }
+
+ .dark-mode .journalContainer{
+    padding: 50px;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    /* margin-bottom: 10px; */
+    font-family: "PPHatton";
+    font-size: 30px;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+   border: #f8efe8 solid 2px;
+   border-top: none;
+   background-color: #202124;
+
+ }
+
+ input[type=text]:invalid {
+    border: #202124 1px;
+  } 
+
+
+/* JOURNAL POSTS */
+.journalContainer > div {
+    width: 100%;
+     display: flex; 
+    flex-direction: row-reverse; 
+    flex-wrap: wrap-reverse;
+    flex-basis: auto;
+    /* flex: 1; */
+    /* margin-left: 20px; */
+}
+
+ /* WHAT ARE YOU GRATEFUL FOR TODAY? */
+
+ .journalContainer > label{
+  color: #202124 ;     
+  text-align: left;
+  padding: 20px 10px;
+ }
+
+ .dark-mode .journalContainer > label{
+    color: #f8efe8 ;     
+    text-align: left;
+    padding: 20px 10px;
+   }
+
+ .journalContainer > label > span.grateful{
+    color: #f8efe8;
+   }
+
+  .dark-mode .journalContainer > label > span.grateful{
+    color: #F2A0DC;
+   }
+
+
+
+ 
+
+
+
+/* TEXTAREA BOX */
+ #comment {
+  width: 100%;
+  height: 150px;
+   /* font-size: 30px; */
+
+   font-family: 'Lato', sans-serif;
+font-size: 20px;
+line-height: 32px;
+   /* font-family: "PPHatton"; */
+   background-color: #f8efe8;
+   padding: 30px 40px;
+   box-sizing: border-box;
+   border: 1.5px solid #202124;
+   border-radius: 4px;
+margin-top: 50px;
+   resize: none;
+ }
+
+.journalContainer #comment:hover{ 
+    cursor: caret; 
+    /* background-color: #c0aeed;     */
+    /* background-color: #f7c775; */
+    /* background-image:
+    linear-gradient(
+      #f7c775, #f8efe8
+    ); */
+ } 
+
+
+
+
+
+
+/* JOURNAL POSTS */
+.wrapper {
+  /* margin-right: 5px; */
+  padding: 5px;
+  color: #202124;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.wrapper > div{
+padding: 40px ;
+font-family: 'Lato', sans-serif;
+font-size: 20px;
+line-height: 32px;
+background-color: #f8efe8;
+color: #202124 ;
+}
+
+.dark-mode .wrapper > div{
+    padding: 40px ;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    background-color: #F2A0DC;
+    }
+
+.dark-mode .wrapper {
+    /* margin-right: 5px; */
+    padding: 5px;
+    color: #202124;
+    /* display: flex; */
+    /* flex-direction: column; */
+  }
+
+/* DATE */
+.wrapper > button {
+    font-family: 'Lato', sans-serif;
+  margin-right: 5px;
+  padding: 10px 0;
+  background-color: #f7c775;
+  color: #202124;
+  /* font-size: 20px; */
+  border: none;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 18px;
+  margin-bottom: 15px;
+  /* font-family: "PPHattonMedium"; */
+}
+
+.dark-mode .wrapper > button {
+    margin-right: 5px;
+    padding: 10px 0;
+    background-color: #202124;
+    color: #f8efe8;
+    font-size: 18px;
+    border: none;
+  }
+
+ 
+
+/* POST BUTTON */
+
+#addComments {
+    width: 15%;
+    padding: 20px;
+    background-color: #f7c775;
+    color: #202124;
+    font-size: 30px;
+    font-family: "PPHatton";
+    margin-bottom: 50px;
+    margin-top: 10px;
+
+    /* background-color: #f8efe8; */
+   /* padding: 30px 40px; */
+   box-sizing: border-box;
+   border: 1.5px solid #202124;
+   /* border-radius: 4px; */
+}
+
+/* hover state for add button */
+#addComments:hover {
+    padding: 20px;
+    background-color: #F2A0DC;
+    color: #202124;
+    font-size: 30px;
+    font-family: "PPHatton";
+    cursor: pointer; 
+}
+
+.dark-mode #addComments {
+    padding: 20px;
+    background-color: #f8efe8;
+    color: #202124;
+    font-size: 30px;
+    font-family: "PPHatton";
+}
+
+
+.dark-mode #addComments:hover {
+    padding: 20px;
+    background-color: #F2A0DC;
+    color: #202124;
+    font-size: 30px;
+    font-family: "PPHatton";
+}
+
+
+
+/* –––––––––– */
+/* REFERENCES */
+/* –––––––––– */
+
+/* HIDE SCROLLBAR: https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
