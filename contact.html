@@ -4,32 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="journal.css">
+
+    <!-- typeface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <!-- Javascript file link -->
-<script src="script.js"></script>
 
+<!-- NAVBAR CONTENT -->
 <div class="navBar">
-
-    <!-- navbar links -->
-    
     <div onclick="location.href='about.html'" style="cursor:pointer" class="about">about</div>
-
-    <!-- inline css to make it clear which page users are on -->
-<div onclick="location.href='contact.html'" style="cursor:pointer; background-color: #F2A0DC;
-    background-image:linear-gradient(#F2A0DC, #f8efe8);" class="contact">contact</div>
+    <!-- inline css to indicate page to users -->
+<div onclick="location.href='contact.html'" style="cursor:pointer; background-color: #F2A0DC; color: #202124 ;" class="contact">journal</div>
     <div onclick="location.href='index.html'" style="cursor:pointer" class="back">back</div>
     <div onclick="darkMode()"class="toggle"><div id="toggleDIV">dark</div></div>
-    
 </div>
 
-<h2> this is the contact page!!</h2>
-<p>could include a form?</p>
-<p>we can have people leave messages here too</p>
-<!-- <button onclick="window.location.href='index.html'" class="back-button" role="button">Back</button> -->
+
+<!-- JOURNAL TEXTAREA CONTENT -->
+<div class="journalContainer">
+    <!-- <label for="comment" name="comment" style="font-size:100px;">what are you <br> <span style="font-family:GrandSlang; font-style:italic;">grateful</span> &nbspfor today?</label> -->
+    <label for="comment" name="comment" style="font-size:100px;">what are you <br><span class="grateful";">grateful</span> for today?</label>
+
+      
+
+   
+    <textarea id="comment"></textarea>
+    <button id="addComments">post</button>
+    <div id="allComments"></div>
+</div>
+
+<script src="journal.js"></script>
 
 
+
+  
 </body>
 </html>
 
