@@ -20,7 +20,7 @@ body {
   width: 100vw;
   max-width: 100%;
   font-size: 36px;
-  height: 46px;
+  height: 50px;
   overflow-x: hidden;
   color: #7796F2;
 }
@@ -38,51 +38,21 @@ body {
 }
 
 body{
-  margin: 0;
-  padding: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 0;
   font-family: "PPHatton";
   color: black;
-  border: #202124 solid 2px;
-  border-top: none;
 }
 
 /* ----- dark mode style ----- */
 .dark-mode {
   background-color: #202124;
-  padding: 50px;
-}
-
-.dark-mode .grid-container > div {
-  background-color: #202124;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 0;
   color: #f8efe8;
 }
-
-.dark-mode .grid-container {
-  background-color: #f8efe8;
-}
-
-
-
-
-/* refer to https://www.w3schools.com/css/css_grid.asp for more on grids  */
-
-.grid-container {
-display: grid;
-
-grid-template-columns: auto auto auto;
-gap: 2px;
-background-color: #202124; 
-font-family: "PPHatton";
-padding: 2px;
-}
-
-.grid-container > div {
-background-color: #f8efe8; 
-text-align: center;
-padding: 40px 0;
-font-size: 40px;
-}
-
 
 
 /* navBar includes about, contact and back buttons across all html pages */
@@ -130,8 +100,6 @@ text-align: center;
 padding: 40px 0;
 font-size: 40px;
 }
-
-
 
 
 /* ----- styling for back button interactions ----- */
