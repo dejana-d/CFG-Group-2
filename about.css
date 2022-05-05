@@ -15,6 +15,7 @@
   font-size: 36px;
   height: 46px;
   overflow-x: hidden;
+  color: #7796F2;
 }
 
 .track {
@@ -33,8 +34,202 @@ body{
   margin: 0;
   padding: 0;
   font-family: "PPHatton";
-  color: hsl(268, 100%, 83%);
+  color: black;
+  border: #202124 solid 2px;
+  border-top: none;
 }
+
+/* ----- dark mode style ----- */
+.dark-mode {
+  background-color: #202124;
+  padding: 50px;
+}
+
+.dark-mode .grid-container > div {
+  background-color: #202124;
+  color: #f8efe8;
+}
+
+.dark-mode .grid-container {
+  background-color: #f8efe8;
+}
+
+
+
+
+/* refer to https://www.w3schools.com/css/css_grid.asp for more on grids  */
+
+.grid-container {
+display: grid;
+
+grid-template-columns: auto auto auto;
+gap: 2px;
+background-color: #202124; 
+font-family: "PPHatton";
+padding: 2px;
+}
+
+.grid-container > div {
+background-color: #f8efe8; 
+text-align: center;
+padding: 40px 0;
+font-size: 40px;
+}
+
+
+
+/* navBar includes about, contact and back buttons across all html pages */
+
+.navBar {
+display: grid;
+grid-template-columns: auto auto auto;
+gap: 2px;
+background-color: #202124; 
+font-family: "PPHatton";
+padding: 2px;
+}
+
+.navBar > div {
+background-color: #f8efe8;
+text-align: center;
+padding: 40px 0;
+font-size: 40px;
+}
+
+/* positions dark mode button in navbar*/
+.navBar .toggle{
+grid-column-start: 6;  
+grid-column-end: 7;
+}
+
+/* positions back button in navbar */
+.navBar .back {
+grid-column-start: 5;  
+grid-column-end: 6;
+ /* border-top-left-radius: 2cm; */
+
+}
+
+/* dark mode styling for navBar */
+.dark-mode .navBar {
+  background-color: #f8efe8; 
+
+}
+
+.dark-mode .navBar > div {
+background-color: #202124;
+color: #f8efe8;
+text-align: center;
+padding: 40px 0;
+font-size: 40px;
+}
+
+
+
+
+/* ----- styling for back button interactions ----- */
+.back:hover{
+background-color:#4AD996;
+background-image:
+linear-gradient(
+  #4ad996, #f8efe8
+);
+
+cursor: pointer;
+}
+
+.dark-mode .back:hover{
+  color:#202124;
+background-color:#4AD996;
+background-image:
+linear-gradient(
+  #4ad996, #202124
+);
+cursor: pointer;
+}
+
+
+/* ----- postion and styling for about button -----  */
+.about {
+  grid-column-start: 1;  
+  grid-column-end: 3;
+}
+
+/* light mode */
+.about:hover{
+  /* background-color:#c8d68b; */
+  background-color: #7796F2;
+  background-image:
+  linear-gradient(
+    #7796F2, #f8efe8
+  );
+  cursor: pointer;
+}
+
+/* dark mode */
+.dark-mode .about:hover{
+
+  background-color: #7796F2;
+  background-image:
+  linear-gradient(
+    #7796F2, #202124
+  );
+  cursor: pointer;
+  color: #202124;
+}
+
+
+
+/* stretches 'contact us' box */
+.contact {
+  grid-column-start: 3;  
+  grid-column-end: 5;
+   /* border-top-left-radius: 2cm; */
+}
+
+/* contact link hover state in light mode */
+.contact:hover{
+  /* background-color:#c0aeed; */
+
+  /* syntax for linear gradient on hover */
+  background-color: #F2A0DC;
+  background-image:
+    linear-gradient(
+      #F2A0DC, #f8efe8
+    );
+  cursor: pointer;
+}
+
+/* contact link hover state in dark mode */
+.dark-mode .contact:hover{
+background-color: #F2A0DC;
+background-image:
+  linear-gradient(
+    #F2A0DC, #202124
+  );
+  cursor: pointer;
+}
+
+.dark-mode .contact{
+  background-color:#202124;
+  cursor: pointer;
+}
+
+/* dark mode link hover state */
+.toggle:hover{
+  background-color: #202124;
+  color: #f8efe8;
+  cursor: pointer;
+}
+
+/* hover state to go back to light mode */    
+.dark-mode .toggle:hover{
+  background-color: #f8efe8;
+  color: #202124;
+  cursor: pointer;
+  /* find out how to change the text or symbol from light mode to dark mode */
+}
+
 
 .container{
   position: relative;
@@ -62,7 +257,7 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background:rgb(121, 190, 156);
+  background: #FEB8C2;
   transition: .5s;
   z-index: 1;
 }
@@ -126,5 +321,5 @@ body{
 
 .container .box:nth-child(1)
 {
-  background: rgb(202, 139, 163);
+  background: #7796F2;
 }
