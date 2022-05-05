@@ -1,5 +1,12 @@
 /* CSS code for about page goes here */
 
+body {
+  background-color: #f8efe8;
+  padding: 50px;
+  overflow-y: scroll; 
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
  .center {
   display: block;
