@@ -1,4 +1,11 @@
-/* CSS code for about page goes here */
+/* loads the font file */
+@font-face {
+  font-family: "PPHatton";
+  src: url("PPHatton-Medium.otf") format("opentype");
+  font-style: "medium";
+}
+ 
+ /* CSS code for about page goes here */
 
 body {
   background-color: #f8efe8;
@@ -6,14 +13,41 @@ body {
   overflow-y: scroll; 
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  font-family: "PPHatton";
+  
 }
 
+body::-webkit-scrollbar{
+  display:none;
+}
+
+
+
+
+/* PAUSE */
+
+
+body > div.pauseTitle > h1{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 80px;
+}
+
+/* about sentence */
+
+body > div.pauseContent > h2{
+  text-align: center;
+  font-size: 25px;
+  line-height: 35px;
+}
+
+/* 
  .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-}
+} */
 
 .marquee {
   position: relative;
@@ -45,6 +79,10 @@ body{
   color: black;
 }
 
+
+
+
+
 /* ----- dark mode style ----- */
 .dark-mode {
   background-color: #202124;
@@ -62,7 +100,7 @@ display: grid;
 grid-template-columns: auto auto auto;
 gap: 2px;
 background-color: #202124; 
-font-family: "PPHatton";
+
 padding: 2px;
 }
 
@@ -157,6 +195,7 @@ cursor: pointer;
 
 /* stretches 'contact us' box */
 .contact {
+  font-family: "PPHatton";
   grid-column-start: 3;  
   grid-column-end: 5;
    /* border-top-left-radius: 2cm; */
@@ -178,6 +217,7 @@ cursor: pointer;
 /* contact link hover state in dark mode */
 .dark-mode .contact:hover{
 background-color: #F2A0DC;
+color: #202124;
 background-image:
   linear-gradient(
     #F2A0DC, #202124
@@ -206,11 +246,13 @@ background-image:
 }
 
 
+
 .container{
   position: relative;
   width: 1200px;
   height: 0px;
   margin: 50px auto;
+ 
 
 }
 
@@ -276,17 +318,20 @@ background-image:
   opacity: 0.7;
 }
 
+/* header in boxes */
 .container .box .content h3{
   margin: 0 0 10px;
   padding: 0;
   color: #fff;
   font-size: 24px;
+  
 }
 
 .container .box .content p{
   margin: 0 0 10px;
   padding: 0;
   color: #fff;
+  font-family: 'Lato', sans-serif;
 }
 
 .container .box:nth-child(1).icon
