@@ -38,7 +38,7 @@ let getDay2 = todayIs2.getDate()
 
 function may2(){
 if ((getDay2 >= 2)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=qj5HtW_qP9Q ');
   } else {
       wrongDay();
   }
@@ -136,7 +136,7 @@ let getDay9 = todayIs9.getDate()
 
 function may9(){
 if ((getDay9 >= 9)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=4TQsfBYCyKQ');
   } else {
       wrongDay();
   }
@@ -164,7 +164,7 @@ let getDay11 = todayIs11.getDate()
 
 function may11(){
 if ((getDay11 >= 11)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=0ItYBQK2yHw');
   } else {
       wrongDay();
   }
@@ -276,7 +276,7 @@ let getDay19 = todayIs19.getDate()
 
 function may19(){
 if ((getDay19 >= 19)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://open.spotify.com/show/5nxikmR35WujLkTfSlgoP5');
   } else {
       wrongDay();
   }
@@ -304,7 +304,7 @@ let getDay21 = todayIs21.getDate()
 
 function may21(){
 if ((getDay21 >= 21)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=UEEsdXn8oG8 ');
   } else {
       wrongDay();
   }
@@ -346,7 +346,7 @@ let getDay24 = todayIs24.getDate()
 
 function may24(){
 if ((getDay24 >= 24)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=4TQsfBYCyKQ');
   } else {
       wrongDay();
   }
@@ -388,7 +388,7 @@ let getDay27 = todayIs27.getDate()
 
 function may27(){
 if ((getDay27 >= 27)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://www.youtube.com/watch?v=-nxAVkZZHNg ');
   } else {
       wrongDay();
   }
@@ -402,7 +402,7 @@ let getDay28 = todayIs28.getDate()
 
 function may28(){
 if ((getDay28 >= 28)  ){
-  openInNewTab('http://www.google.com');
+  openInNewTab('https://open.spotify.com/show/3WdMpEOWYl8Zx8uzzH8rAn ');
   } else {
       wrongDay();
   }
